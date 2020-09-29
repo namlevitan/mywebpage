@@ -1,0 +1,85 @@
+body{
+    margin:0 auto;
+    padding:0 auto;
+    background: url(k2.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+.container{
+    width: 300px;
+    height: 450px;
+   
+    background: linear-gradient(rgb(#000) 0%, rgb(#fff) 100%);
+    top: 20%;
+    left: 40%;
+    position: absolute;
+    transform: translateY(-50%,-50%);
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border: 0.5px solid black;
+    border-radius: 25px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    top: -50px;
+    left: calc(50% - 50px);
+    
+}
+h2{
+    margin: 0; 
+    padding:  60px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.container input[type="text"],input[type="password"]{
+    border: none;   
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+
+.container form p{
+    
+    text-align: center;
+}
+.container form a{
+    justify-content: center;
+}
+.container form div .center{
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+}
+.btn-login{
+	padding: 15px 25px;
+	border: none;
+	background-color: #27ae60;
+	color: #fff;
+}

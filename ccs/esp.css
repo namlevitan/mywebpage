@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+font-family: 'Roboto', sans-serif;
+}
+.container{
+    animation: transitionIn 0.75s;
+}
+
+.slidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #009900;
+    transition: all .5s ease;
+}
+.slidebar header{
+    font-size: 30px;
+    color: blanchedalmond;
+    line-height: 70px;
+    text-align: left;
+    padding-left: 45px;
+    background: #504235;
+    user-select: none;
+}
+.slidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: blanchedalmond;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(10,25,200, .1);
+    border-bottom: 1px solid #336600;
+    transition: .4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+
+}
+.slidebar ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #009900;
+    border-radius: 5px;
+    transition: all .5s;
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #015454;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .slidebar{
+    left: 0;
+}
+#check:checked ~ label #cancel{
+    left:195px;
+}
+#check:checked ~ section{
+    margin-left: 250px;
+}
+
+section{
+   /* background: url(green-grass-earth.jpeg) no-repeat;*/
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s ease;
+}
+
+
